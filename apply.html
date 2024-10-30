@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo-future-iq.svg" />
+    <link href="/src/styles/output.css" rel="stylesheet" />
+    <link href="./src/styles/locomotive-scroll.css" rel="stylesheet" />
+    <title>Application - Ai Revenue Growth Accelerator</title>
+  </head>
+  <body class="body relative" data-scroll-container>
+    <img
+      class="absolute -top-[12.75rem] left-1/2 z-6 max-w-[16.5rem] -translate-x-1/2 sm:-top-[23.75rem] sm:max-w-full"
+      src="./src/assets/illustrations/whole/illustration-ring-fill.png"
+      alt=""
+      data-class="ring"
+    />
+    <img
+      class="absolute left-1/2 top-0 z-4 max-w-[16.5rem] -translate-x-1/2 sm:max-w-full"
+      src="./src/assets/illustrations/pieces/illustration-top-bars.svg"
+      alt=""
+    />
+    <div
+      class="absolute left-1/2 top-[2%] z-4 h-[263px] w-[69px] -translate-x-1/2 -rotate-90 rounded-3xl bg-primary-vivid opacity-80 mix-blend-plus-lighter blur-[75px]"
+    ></div>
+
+    <nav
+      class="sticky top-0 z-2 bg-black"
+      data-scroll
+      data-scroll-sticky
+      data-scroll-target="[data-scroll-container]"
+    >
+      <div
+        class="mx-auto flex max-w-screen-xl justify-between pb-4 pe-4 ps-6 pt-6 sm:pe-10 sm:ps-10"
+      >
+        <a class="" href="/">
+          <img
+            class="z-1 sm:hidden"
+            src="/src/assets/logos/logo-future-iq.svg"
+            alt=""
+            data-class="logo"
+          />
+          <img
+            class="hidden sm:block sm:w-2/3 md:w-full"
+            src="/src/assets/logos/logo-future-iq-full.svg"
+            alt=""
+            data-class="logo"
+          />
+        </a>
+
+        <img
+          data-class="nav-menu"
+          src="/src/assets/icons/icon-nav-menu.svg"
+          alt=""
+        />
+      </div>
+    </nav>
+
+    <main
+      class="relative z-1 flex flex-col items-center gap-6 pb-18 pe-4 ps-4 pt-16 text-center sm:pe-10 sm:ps-10 sm:pt-32 xl:pt-40"
+    >
+      <h1
+        class="nonvisible max-w-80 text-2xl font-semibold text-white sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-6xl"
+        data-scroll
+        data-scroll-class="visible"
+      >
+        <span class="text-primary-vivid">Application</span> - Ai Revenue Growth
+        Accelerator
+      </h1>
+
+      <form class="grid w-full gap-15 lg:gap-20" action="">
+        <div
+          class="nonvisible rounded-lg border-2 border-solid border-white/20 p-1"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <div
+            class="grid w-full gap-5 bg-white/5 pb-8 pl-4 pr-4 pt-8 md:pb-12 md:pl-7 md:pr-7 md:pt-12 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-14 lg:pb-15 lg:pl-32 lg:pr-32 lg:pt-15"
+          >
+            <label
+              for="firstName"
+              class="flex flex-col items-start gap-3 text-white/80"
+            >
+              First Name
+              <input
+                class="peer w-full rounded-lg border-2 border-solid border-transparent bg-white/5 pb-3 pl-5 pr-5 pt-3 placeholder:text-white/30"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter First Name"
+                type="text"
+                required
+                minlength="3"
+              />
+              <p class="error-msg hidden text-left text-red-500">
+                Please your First Name must be longer than 3 characters
+              </p>
+            </label>
+
+            <label
+              for="lastName"
+              class="flex flex-col items-start gap-3 text-white/80"
+            >
+              Last Name
+              <input
+                class="peer w-full rounded-lg border-2 border-solid border-transparent bg-white/5 pb-3 pl-5 pr-5 pt-3 placeholder:text-white/30"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter Last Name"
+                type="text"
+                required
+                minlength="3"
+              />
+              <p class="error-msg hidden text-left text-red-500">
+                Please your Last Name must be longer than 3 characters
+              </p>
+            </label>
+
+            <label
+              for="email"
+              class="flex flex-col items-start gap-3 text-white/80"
+            >
+              Email Address
+              <input
+                class="peer w-full rounded-lg border-2 border-solid border-transparent bg-white/5 pb-3 pl-5 pr-5 pt-3 placeholder:text-white/30"
+                id="email"
+                placeholder="Enter Email Address"
+                name="email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                type="email"
+                required
+              />
+              <p class="error-msg hidden text-left text-red-500">
+                Please input a valid Email Address
+              </p>
+            </label>
+
+            <label
+              for="businessName"
+              class="flex flex-col items-start gap-3 text-white/80"
+            >
+              Business Name
+              <input
+                class="peer w-full rounded-lg border-2 border-solid border-transparent bg-white/5 pb-3 pl-5 pr-5 pt-3 placeholder:text-white/30"
+                placeholder="Enter Business Name"
+                id="businessName"
+                name="businessName"
+                type="text"
+                required
+                minlength="3"
+              />
+              <p class="error-msg hidden text-left text-red-500">
+                Please your Business Name must be longer than 3 characters
+              </p>
+            </label>
+          </div>
+        </div>
+
+        <!-- INDUSTRY -->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            What <span class="text-primary-vivid">Industry</span>
+            are you in?
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="industry-1">
+              <input
+                id="industry-1"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="retail"
+              />
+              Retail
+            </label>
+            <label class="flex gap-3" for="industry-2">
+              <input
+                id="industry-2"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="e-commerce"
+              />
+              E-Commerce
+            </label>
+            <label class="flex gap-3" for="industry-3">
+              <input
+                id="industry-3"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="professional services"
+              />
+              Professional Services
+            </label>
+            <label class="flex gap-3" for="industry-4">
+              <input
+                id="industry-4"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="hospitality"
+              />
+              Hospitality
+            </label>
+            <label class="flex gap-3" for="industry-5">
+              <input
+                id="industry-5"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="real estate"
+              />
+              Real Estate
+            </label>
+            <label class="flex gap-3" for="industry-6">
+              <input
+                id="industry-6"
+                name="industry"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="others"
+              />
+              Others
+            </label>
+          </div>
+        </div>
+
+        <!-- CHALLENGES-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            What is your
+            <span class="text-primary-vivid">biggest challenge </span>
+            in growing your sales?
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="challenge-1">
+              <input
+                id="challenge-1"
+                name="challenge"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="finding new customers"
+              />
+              Finding new customers
+            </label>
+            <label class="flex gap-3" for="challenge-2">
+              <input
+                id="challenge-2"
+                name="challenge"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="increasing sales from existing customers"
+              />
+              Increasing sales from existing customers
+            </label>
+            <label class="flex gap-3" for="challenge-3">
+              <input
+                id="challenge-3"
+                name="challenge"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="improving customer experience"
+              />
+              Improving customer experience
+            </label>
+            <label class="flex gap-3" for="challenge-4">
+              <input
+                id="challenge-6"
+                name="challenge"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="others"
+              />
+              Others
+            </label>
+          </div>
+        </div>
+
+        <!-- AI IMPLEMENTATION-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            <span class="text-primary-vivid">Have you implemented AI </span>
+            in any part of your business yet?
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="ai-implementation-1">
+              <input
+                id="ai-implementation-1"
+                name="ai-implementation"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="yes"
+              />
+              Yes
+            </label>
+            <label class="flex gap-3" for="ai-implementation-2">
+              <input
+                id="ai-implementation-2"
+                name="ai-implementation"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="no"
+              />
+              No
+            </label>
+          </div>
+        </div>
+
+        <!-- AUTOMATION-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            What tasks would you like to
+            <span class="text-primary-vivid">
+              include automation in your business?
+            </span>
+          </h2>
+          <textarea
+            class="resize-y rounded-lg border-2 border-solid border-white/30 bg-transparent pl-4 pr-4 pt-6"
+            placeholder="Describe task automation"
+            name="automation-desc"
+            id="automation-desc"
+            rows="6"
+          ></textarea>
+        </div>
+
+        <!-- EMPLOYEE RANGE-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            <span class="text-primary-vivid">How many employees</span>
+            are currently in your business?
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="employee-range-1">
+              <input
+                id="employee-range-1"
+                name="employee-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="1-5"
+              />
+              1-5
+            </label>
+            <label class="flex gap-3" for="employee-range-2">
+              <input
+                id="employee-range-2"
+                name="employee-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="6-10"
+              />
+              6-10
+            </label>
+            <label class="flex gap-3" for="employee-range-3">
+              <input
+                id="employee-range-3"
+                name="employee-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="11-50"
+              />
+              11-50
+            </label>
+            <label class="flex gap-3" for="employee-range-4">
+              <input
+                id="employee-range-4"
+                name="employee-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="51+"
+              />
+              51+
+            </label>
+          </div>
+        </div>
+
+        <!-- INCOME RANGE-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            What is your
+            <span class="text-primary-vivid"> monthly revenue? </span>(This will
+            help us tailor the right strategies for your growth.)
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="income-range-1">
+              <input
+                id="income-range-1"
+                name="income-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="less than $10,000"
+              />
+              Less than $10,000
+            </label>
+            <label class="flex gap-3" for="income-range-2">
+              <input
+                id="income-range-2"
+                name="income-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="$10,000 - $50,000"
+              />
+              $10,000 - $50,000
+            </label>
+            <label class="flex gap-3" for="income-range-3">
+              <input
+                id="income-range-3"
+                name="income-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="$50,000 - $100,000"
+              />
+              $50,000 - $100,000
+            </label>
+            <label class="flex gap-3" for="income-range-4">
+              <input
+                id="income-range-4"
+                name="income-range"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="$100,000+"
+              />
+              $100,000+
+            </label>
+          </div>
+        </div>
+
+        <!-- AI COMMITMENT-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            <span class="text-primary-vivid"> Are you ready </span> to commit
+            time and resources to grow your business with AI?
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="ai-commitment-1">
+              <input
+                id="ai-commitment-1"
+                name="ai-commitment"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="yes"
+              />
+              Yes
+            </label>
+            <label class="flex gap-3" for="ai-commitment-2">
+              <input
+                id="ai-commitment-2"
+                name="ai-commitment"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="no"
+              />
+              No
+            </label>
+            <label class="flex gap-3" for="ai-commitment-3">
+              <input
+                id="ai-commitment-3"
+                name="ai-commitment"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="i'd like more details first"
+              />
+              I’d like more details first
+            </label>
+          </div>
+        </div>
+
+        <!-- GOOD FIT-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            Why do you believe your business is
+            <span class="text-primary-vivid"> a good fit </span>
+            for this program?
+          </h2>
+          <textarea
+            class="resize-y rounded-lg border-2 border-solid border-white/30 bg-transparent pl-4 pr-4 pt-6"
+            placeholder="Explain why you think you’re a good fit"
+            name="good-fit-desc"
+            id="good-fit-desc"
+            rows="6"
+          ></textarea>
+        </div>
+
+        <!-- SUCCESS-->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            If accepted, what result would you consider a
+            <span class="text-primary-vivid"> success </span>
+            after 30 days in the program?
+          </h2>
+          <textarea
+            class="resize-y rounded-lg border-2 border-solid border-white/30 bg-transparent pl-4 pr-4 pt-6"
+            placeholder="What success looks like?"
+            name="success-desc"
+            id="success-desc"
+            rows="6"
+          ></textarea>
+        </div>
+
+        <!-- HOW DID YOU HEAR ABOUT US? -->
+        <div
+          class="nonvisible grid gap-8 text-left"
+          data-scroll
+          data-scroll-class="visible"
+        >
+          <h2 class="text-4xl font-semibold lg:text-5xl">
+            How did you hear about the
+            <span class="text-primary-vivid">
+              AI Revenue Growth Accelerator?
+            </span>
+          </h2>
+
+          <div class="flex flex-col gap-8">
+            <label class="flex gap-3" for="source-1">
+              <input
+                id="source-1"
+                name="source"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="social media"
+              />
+              Social Media
+            </label>
+            <label class="flex gap-3" for="source-2">
+              <input
+                id="source-2"
+                name="source"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="e-mail"
+              />
+              E-mail
+            </label>
+            <label class="flex gap-3" for="source-3">
+              <input
+                id="source-3"
+                name="source"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="referral"
+              />
+              Referral
+            </label>
+            <label class="flex gap-3" for="source-4">
+              <input
+                id="source-4"
+                name="source"
+                class="appearance-none-full h-6 w-6 rounded-full border-2 border-solid border-white/30 transition-all duration-300 checked:border-white checked:bg-white"
+                type="radio"
+                value="others"
+              />
+              Others
+            </label>
+          </div>
+        </div>
+
+        <button
+          class="block rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 transition-all duration-200 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
+          href="/"
+        >
+          Sign Up
+        </button>
+      </form>
+    </main>
+
+    <footer class="flex flex-col items-center pb-6 pt-15 lg:pb-9 lg:pt-30">
+      <div class="flex flex-col gap-6">
+        <ul class="flex justify-between gap-10 pt-8">
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="/src/assets/logos/logo-instagram.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="/src/assets/logos/logo-linkedin.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="/src/assets/logos/logo-youtube.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="/src/assets/logos/logo-twitter.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+
+        <p>2024 FutureIQ Inc. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

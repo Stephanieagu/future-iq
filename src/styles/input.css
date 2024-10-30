@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Montserrat*/
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Regular.woff2'), format('woff2'),
+      url('/fonts/montserrat/Montserrat-Regular.woff'), format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Medium.woff2'), format('woff2'),
+      url('/fonts/montserrat/Montserrat-Medium.woff'), format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-SemiBold.woff2'), format('woff2'),
+      url('/fonts/montserrat/Montserrat-SemiBold.woff'), format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Bold.woff2'), format('woff2'),
+      url('/fonts/montserrat/Montserrat-Bold.woff'), format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  /* Lato */
+  @font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Regular.woff2'), format('woff2'),
+      url('/fonts/lato/Lato-Regular.woff'), format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Medium.woff2'), format('woff2'),
+      url('/fonts/lato/Lato-Medium.woff'), format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@layer utilities {
+  .body {
+    @apply min-h-screen bg-black font-montserrat-serif text-white;
+  }
+
+  .bg-gradient {
+    background: rgb(41, 98, 255);
+    background: linear-gradient(
+      45deg,
+      rgba(41, 98, 255, 0.1) 2%,
+      rgba(255, 255, 255, 0.04) 50%,
+      rgba(41, 98, 255, 0.1) 98%
+    );
+    backdrop-filter: blur(137.341px);
+  }
+
+  .hero__card-width {
+    inline-size: min(100%, 25.5rem);
+  }
+
+  .main__card {
+    inline-size: min(100%, 40rem);
+    /* block-size: min(100%, 40rem); */
+  }
+
+  .appearance-none-full {
+    -webkit-appearance: none; /* Chrome, Safari, iOS */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Standard */
+  }
+
+  input[required]:invalid:not(:placeholder-shown) {
+    @apply border-red-500;
+  }
+
+  input[required]:valid:not(:placeholder-shown) {
+    @apply border-success;
+  }
+
+  input[required]:invalid:not(:placeholder-shown) + .error-msg {
+    @apply block text-red-500;
+  }
+
+  input[required]:invalid ~ button[type='submit'] {
+    @apply pointer-events-none opacity-60;
+  }
+  .nonvisible {
+    @apply translate-y-5 opacity-0 transition-all duration-700 ease-in-out;
+  }
+  .visible {
+    @apply opacity-1 translate-y-0;
+  }
+  .transition-delay-20 {
+    transition-delay: 2s;
+  }
+  .transition-delay-30 {
+    transition-delay: 3s;
+  }
+}

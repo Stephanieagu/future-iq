@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo-future-iq.svg" />
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <link href="./src/styles/locomotive-scroll.css" rel="stylesheet" />
+    <title>FutureIQ</title>
+  </head>
+  <!-- 
+  <style>
+    * {
+      outline: 1px solid red;
+    }
+  </style> -->
+  <body class="body relative" data-scroll-container>
+    <img
+      class="absolute -top-[12.75rem] left-1/2 z-6 max-w-[16.5rem] -translate-x-1/2 sm:-top-[23.75rem] sm:max-w-full"
+      src="./src/assets/illustrations/whole/illustration-ring-fill.png"
+      alt=""
+      data-class="ring"
+    />
+    <img
+      class="absolute left-1/2 top-0 z-4 max-w-[16.5rem] -translate-x-1/2 sm:max-w-full"
+      src="./src/assets/illustrations/pieces/illustration-top-bars.svg"
+      alt=""
+    />
+    <div
+      class="absolute left-1/2 top-[2%] z-4 h-[263px] w-[69px] -translate-x-1/2 -rotate-90 rounded-3xl bg-primary-vivid opacity-80 mix-blend-plus-lighter blur-[75px]"
+    ></div>
+
+    <nav
+      class="sticky top-0 z-2 bg-black"
+      data-scroll
+      data-scroll-sticky
+      data-scroll-target="[data-scroll-container]"
+    >
+      <div
+        class="mx-auto flex max-w-screen-xl justify-between pb-4 pe-4 ps-6 pt-6 sm:pe-10 sm:ps-10"
+      >
+        <a class="" href="/">
+          <img
+            class="z-1 sm:hidden"
+            src="/src/assets/logos/logo-future-iq.svg"
+            alt=""
+            data-class="logo"
+          />
+          <img
+            class="hidden sm:block sm:w-2/3 md:w-full"
+            src="/src/assets/logos/logo-future-iq-full.svg"
+            alt=""
+            data-class="logo"
+          />
+        </a>
+
+        <img
+          data-class="nav-menu"
+          src="/src/assets/icons/icon-nav-menu.svg"
+          alt=""
+        />
+      </div>
+    </nav>
+
+    <header
+      class="header relative flex flex-col gap-16 pb-18 pe-4 ps-4 pt-16 sm:gap-32 sm:pe-10 sm:ps-10 sm:pt-32 xl:gap-40 xl:pt-40"
+    >
+      <div class="z-1 flex flex-col items-center gap-13">
+        <section class="flex flex-col items-center gap-6 text-center">
+          <h1
+            class="max-w-80 text-2xl font-semibold text-white sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
+            data-class="header__heading"
+          >
+            Why Are You Still Doing
+            <span class="text-primary-vivid">Everything</span> on Your Own?
+          </h1>
+
+          <p
+            class="max-w-[22rem] pb-6 font-lato-serif text-sm leading-loose text-white/70 sm:max-w-[27rem] sm:text-base lg:max-w-[33rem] lg:text-xl"
+            data-class="header__par"
+          >
+            Feeling <span class="text-primary-vivid">overworked?</span> Imagine
+            growing your business faster—without the
+            <span class="text-primary-vivid">stress, huge team,</span> and
+            <span class="text-primary-vivid">wasted time</span>.
+            <span class="text-primary-vivid">
+              You don’t have to do this alone anymore.
+            </span>
+          </p>
+
+          <a
+            class="rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
+            href="/apply"
+            data-class="header__btn"
+            >I'm Ready to Apply</a
+          >
+        </section>
+
+        <div class="flex items-center gap-3">
+          <div
+            data-class="pricing__value"
+            class="flex flex-col gap-2 leading-normal"
+          >
+            <p class="text-3xl font-bold text-primary-vivid sm:text-4xl">
+              $750
+            </p>
+            <h3 class="text-base">Investment</h3>
+          </div>
+
+          <span
+            data-class="pricing__bar"
+            class="separator h-16 w-0.5 bg-white"
+          ></span>
+
+          <section class="" data-class="pricing__plan">
+            <h3 class="text-sm font-bold sm:text-base">
+              Payment Plan Available
+            </h3>
+            <p class="text-sm sm:text-base">50% upfront</p>
+            <p class="text-sm sm:text-base">50% after 15 days</p>
+          </section>
+        </div>
+      </div>
+
+      <section
+        class="z-1 flex flex-col items-center gap-10 sm:gap-14 xl:gap-30"
+      >
+        <h1
+          class="max-w-80 text-2xl font-semibold text-white sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
+          data-class="header__manifesto"
+        >
+          In just <span class="text-primary-vivid">30 days</span>, you’ll-
+        </h1>
+
+        <div
+          class="grid max-w-screen-xl justify-items-center gap-5 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3"
+        >
+          <!-- CARD 1 -->
+          <div
+            class="hero__hero__card-width rounded-lg border-2 border-solid border-white/5 p-1"
+            data-class="header__card"
+          >
+            <div
+              class="bg-gradient flex h-full flex-1 flex-col items-center justify-between gap-4 rounded-lg p-2 text-center"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-free-up-time-and-resources.svg"
+                alt=""
+              />
+              <p class="max-w-[21.25rem] text-sm sm:text-xl">
+                Have an <span class="text-primary-vivid">AI strategy</span> that
+                frees up your <span class="text-primary-vivid">time</span> and
+                increases your <span class="text-primary-vivid">revenue</span>.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="hero__card-width rounded-lg border-2 border-solid border-white/5 p-1"
+            data-class="header__card"
+          >
+            <div
+              class="bg-gradient flex h-full flex-col items-center justify-between gap-4 rounded-lg p-2 text-center"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-everyday-tasks.svg"
+                alt=""
+              />
+              <p class="max-w-[21.25rem] text-sm sm:text-xl">
+                Use <span class="text-primary-vivid">AI tools</span> that handle
+                everyday tasks, giving you back countless
+                <span class="text-primary-vivid"> hours </span>
+                daily.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="hero__card-width rounded-lg border-2 border-solid border-white/5 p-1"
+            data-class="header__card"
+          >
+            <div
+              class="bg-gradient flex h-full flex-col items-center justify-between gap-4 rounded-lg p-2 text-center"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-trends.svg"
+                alt=""
+              />
+              <p class="max-w-[21.25rem] text-sm sm:text-xl">
+                Grow your business
+                <span class="text-primary-vivid">faster</span>—without
+                <span class="text-primary-vivid">burning</span> out or
+                <span class="text-primary-vivid"> hiring </span>
+                more staff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="absolute left-1/2 right-1/2 top-1/2 h-[247px] w-full -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-primary-vivid opacity-40 blur-[300px]"
+      ></div>
+      <img
+        class="absolute left-[50%] right-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 lg:left-[55%] lg:top-[55%]"
+        src="./src/assets/illustrations/pieces/illustration-hero-lines.svg"
+        alt=""
+      />
+    </header>
+
+    <main class="relative bg-gray-mist">
+      <img
+        class="absolute left-1/2 right-1/2 top-0 -translate-x-1/2"
+        src="/src/assets/illustrations/pieces/illustration-lines-main.svg"
+        alt=""
+      />
+
+      <section
+        class="mx-auto flex max-w-limit-xl flex-col items-center justify-center gap-10 bg-gray-mist pb-12 pe-4 ps-4 pt-12 sm:gap-14 sm:pb-16 sm:pe-10 sm:ps-10 sm:pt-16 xl:gap-20 xl:pb-36 xl:pt-27"
+      >
+        <h1
+          class="z-1 max-w-80 text-center text-2xl font-semibold text-black-charcoal sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
+        >
+          What if you had an
+          <span class="text-primary-vivid">AI co-founder</span> doing the hard
+          work for you?
+        </h1>
+        <div class="z-1 grid gap-5 md:grid-cols-2 md:gap-6">
+          <!-- CARD 1 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="relative flex flex-col items-center gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="absolute left-1/2 right-1/2 top-0 -translate-x-1/2"
+                src="./src/assets/illustrations/pieces/illustration-lines-card.svg"
+                alt=""
+              />
+
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-sparks.svg"
+                alt=""
+              />
+              <div class="relative flex w-full flex-col gap-4 text-center">
+                <img
+                  class="absolute -bottom-6 z-1"
+                  src="./src/assets/backgrounds/bg-partial-blob.png"
+                  alt=""
+                />
+                <h3
+                  class="relative z-2 text-sm text-black-charcoal sm:text-xl lg:text-2xl"
+                >
+                  Hire an <strong>AI Co-Founder</strong>
+                </h3>
+                <p
+                  class="relative z-2 font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Learn how to integrate AI as a strategic partner in your
+                  business, driving growth and efficiency without the high cost
+                  of a full-time hire.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-powered.svg"
+                alt=""
+              />
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  <strong>AI-Powered Customer</strong> Acquisition
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Supercharge your growth by leveraging AI to attract high-value
+                  customers more efficiently, reducing costs by up to 50% and
+                  boosting your revenue.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-social-auto.svg"
+                alt=""
+              />
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Social Media on <strong>Autopilot</strong>
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  AI tools will keep your social channels active, engaging, and
+                  personalized 24/7—converting followers into loyal customers
+                  with less effort.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-personalization.svg"
+                alt=""
+              />
+
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Next Level <strong>Personalization</strong>
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Implement AI to provide hyper-personalized experiences at
+                  scale, increasing customer satisfaction, loyalty, and lifetime
+                  value.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="relative right-[11%] z-1"
+                src="./src/assets/illustrations/whole/illustration-sessions.svg"
+                alt=""
+              />
+
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Personalized <strong>AI Strategy</strong> sessions
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Receive one 1:1 session where we deep-dive into your business,
+                  identifying the best AI opportunities and crafting a custom
+                  implementation plan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-studies.svg"
+                alt=""
+              />
+
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Exclusive <strong>ROI Calculations</strong> and
+                  <strong>Case Studies</strong>
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Use our AI ROI calculator to see the potential impact on your
+                  business and learn from real-world case studies of businesses
+                  that have transformed using these methods.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-vault.svg"
+                alt=""
+              />
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Access to the <strong>AI Resource Vault</strong>
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Get exclusive access to advanced training videos, industry
+                  reports, and use-case templates to continue leveling up your
+                  AI knowledge and application.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 8 -->
+          <div
+            class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
+          >
+            <div
+              class="flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-off-white p-4 sm:p-6 lg:gap-16"
+            >
+              <img
+                class="z-1"
+                src="./src/assets/illustrations/whole/illustration-network.svg"
+                alt=""
+              />
+
+              <div class="flex w-full flex-col gap-4 text-center">
+                <h3 class="text-sm text-black-charcoal sm:text-xl lg:text-2xl">
+                  Join a <strong>Network</strong> of Future First Entrepreneurs
+                </h3>
+                <p
+                  class="font-lato-serif text-sm text-slate sm:text-base lg:text-xl"
+                >
+                  Connect with like-minded business owners and professionals for
+                  networking, sharing insights, and ongoing support throughout
+                  the program.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-col items-center pb-20 pe-4 ps-4 pt-12 sm:pb-16 sm:pe-10 sm:ps-10 sm:pt-14 xl:pt-28"
+    >
+      <h1
+        class="max-w-80 text-center text-lg font-semibold text-white sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
+      >
+        What if you had an
+        <span class="text-primary-vivid">AI co-founder</span> doing the hard
+        work for you?
+      </h1>
+
+      <div
+        class="relative flex justify-center pb-12 pt-12 sm:pb-16 sm:pt-16 xl:pb-30 xl:pt-30"
+      >
+        <img
+          class="z-1 hidden h-full w-full md:block"
+          src="./src/assets/illustrations/whole/illustration-journey.svg"
+          alt=""
+        />
+        <img
+          class="z-1 h-full w-full md:hidden"
+          src="./src/assets/illustrations/whole/illustration-journey-small.svg"
+          alt=""
+        />
+
+        <!-- 
+        <div
+          class="absolute left-[22%] top-[8%] flex max-w-[9.375rem] flex-col gap-4 text-white sm:max-w-[15.375rem] lg:max-w-[23.125rem]"
+        >
+          <h3 class="text-sm font-semibold sm:text-base lg:text-xl">Week 01</h3>
+          <p class="font-lato-serif text-xs sm:text-sm lg:text-lg">
+            Build a scalable AI-driven business model with a personalized
+            strategy.
+          </p>
+        </div>
+        <div
+          class="absolute left-[54%] top-[12%] flex max-w-[9.375rem] flex-col gap-4 text-white sm:max-w-[15.375rem] lg:max-w-[23.125rem]"
+        >
+          <h3 class="text-sm font-semibold sm:text-base lg:text-xl">Week 02</h3>
+          <p class="font-lato-serif text-xs sm:text-sm lg:text-lg">
+            Automate customer acquisition and social media with powerful AI
+            tools.
+          </p>
+        </div>
+        <div
+          class="absolute right-[18%] top-[36%] flex max-w-[9.375rem] flex-col gap-4 text-white sm:max-w-[15.375rem] lg:max-w-[23.125rem]"
+        >
+          <h3 class="text-sm font-semibold sm:text-base lg:text-xl">Week 03</h3>
+          <p class="font-lato-serif text-xs sm:text-sm lg:text-lg">
+            Deliver exceptional customer experiences and monetize your data
+            using AI.
+          </p>
+        </div>
+        <div
+          class="absolute bottom-[29%] right-[25%] flex max-w-[9.375rem] flex-col gap-4 text-white sm:max-w-[15.375rem] lg:max-w-[23.125rem]"
+        >
+          <h3 class="text-sm font-semibold sm:text-base lg:text-xl">Week 04</h3>
+          <p class="font-lato-serif text-xs sm:text-sm lg:text-lg">
+            Exclusive 1:1 sessions with Edwina McKennon to create a 12-month AI
+            roadmap.
+          </p>
+        </div> -->
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <a
+          class="block rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 transition-all duration-200 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
+          href="/apply"
+          >Apply now</a
+        >
+
+        <ul class="flex justify-between gap-10 pt-8">
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="./src/assets/logos/logo-instagram.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="./src/assets/logos/logo-linkedin.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="./src/assets/logos/logo-youtube.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="transition-all duration-200 hover:scale-110 hover:brightness-200"
+                src="./src/assets/logos/logo-twitter.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+
+        <p>2024 FutureIQ Inc. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
