@@ -57,6 +57,9 @@
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   .body {
     @apply min-h-screen bg-black font-montserrat-serif text-white;
   }
@@ -113,5 +116,10 @@
   }
   .transition-delay-30 {
     transition-delay: 3s;
+  }
+
+  [data-class='header__heading'],
+  [data-class='main__card-section'] {
+    will-change: transform, opacity;
   }
 }

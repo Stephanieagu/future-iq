@@ -4,8 +4,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import LocomotiveScroll from 'locomotive-scroll';
-
 // SELECTORS
 const SELECTORS = {
   RING: "[data-class='ring']",
@@ -28,17 +26,6 @@ const SELECTORS = {
 };
 
 gsap.registerPlugin(ScrollTrigger);
-
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector('[data-scroll-container]'),
-//   smooth: true,
-//   smartphone: {
-//     smooth: true,
-//   },
-//   tablet: {
-//     smooth: true,
-//   },
-// });
 
 // TIMELINE CREATION
 const heroTl = gsap.timeline({
