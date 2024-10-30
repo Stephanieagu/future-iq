@@ -23,6 +23,9 @@ const SELECTORS = {
   FOOTER_HEADING: "[data-class='footer__heading']",
   FOOTER_JOURNEY: "[data-class='footer__journey']",
   FOOTER_CONTACT: "[data-class='footer__contact']",
+  FOOTER_CONTACT__BTN: "[data-class='footer__contact__btn']",
+  FOOTER_CONTACT__LINK: "[data-class='footer__contact__link']",
+  FOOTER_CONTACT__COPY: "[data-class='footer__contact__copy']",
 };
 
 gsap.registerPlugin(ScrollTrigger);
@@ -48,6 +51,16 @@ const pricingDetailsTl = gsap.timeline({
   defaults: {
     duration: 0.475,
     ease: 'power2.out',
+  },
+});
+
+const footerContactTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: SELECTORS.FOOTER_CONTACT,
+    start: 'top 90%',
+    end: 'bottom 20%',
+    toggleActions: 'play none none none',
+    once: true,
   },
 });
 
@@ -111,33 +124,36 @@ gsap.from(SELECTORS.HEADER_CARD, {
 gsap.from(SELECTORS.MAIN_HEADING, {
   y: 30,
   opacity: 0,
-  stagger: 0.25,
   scrollTrigger: scrollTriggerObj(SELECTORS.MAIN_HEADING),
 });
 
 gsap.from(SELECTORS.MAIN_CARD_SECTION, {
   y: 30,
   opacity: 0,
-  stagger: 0.25,
   scrollTrigger: scrollTriggerObj(SELECTORS.MAIN_CARD_SECTION),
 });
+
 gsap.from(SELECTORS.FOOTER_HEADING, {
   y: 30,
   opacity: 0,
-  stagger: 0.25,
   scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_HEADING),
 });
-
 gsap.from(SELECTORS.FOOTER_JOURNEY, {
   y: 30,
   opacity: 0,
-  stagger: 0.25,
   scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_JOURNEY),
 });
 
-gsap.from(SELECTORS.FOOTER_CONTACT, {
-  y: 30,
-  opacity: 0,
-  stagger: 0.25,
-  scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_CONTACT),
-});
+footerContactTl
+  .from(SELECTORS.FOOTER_CONTACT__BTN, {
+    y: 30,
+    opacity: 0,
+  })
+  .from(SELECTORS.FOOTER_CONTACT__LINK, {
+    y: 30,
+    opacity: 0,
+    stagger: 0.125,
+  })
+  .from(SELECTORS.FOOTER_CONTACT__COPY, {
+    opacity: 0,
+  });

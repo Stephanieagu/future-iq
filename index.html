@@ -543,13 +543,14 @@
 
       <div class="flex flex-col gap-6" data-class="footer__contact">
         <a
-          class="block rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 transition-all duration-200 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
+          class="block rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
           href="/apply"
+          data-class="footer__contact__btn"
           >Apply now</a
         >
 
         <ul class="flex justify-between gap-10 pt-8">
-          <li>
+          <li data-class="footer__contact__link">
             <a href="/">
               <img
                 class="transition-all duration-200 hover:scale-110 hover:brightness-200"
@@ -558,7 +559,7 @@
               />
             </a>
           </li>
-          <li>
+          <li data-class="footer__contact__link">
             <a href="/">
               <img
                 class="transition-all duration-200 hover:scale-110 hover:brightness-200"
@@ -567,7 +568,7 @@
               />
             </a>
           </li>
-          <li>
+          <li data-class="footer__contact__link">
             <a href="/">
               <img
                 class="transition-all duration-200 hover:scale-110 hover:brightness-200"
@@ -576,7 +577,7 @@
               />
             </a>
           </li>
-          <li>
+          <li data-class="footer__contact__link">
             <a href="/">
               <img
                 class="transition-all duration-200 hover:scale-110 hover:brightness-200"
@@ -587,7 +588,9 @@
           </li>
         </ul>
 
-        <p>2024 FutureIQ Inc. All Rights Reserved</p>
+        <p data-class="footer__contact__copy">
+          2024 FutureIQ Inc. All Rights Reserved
+        </p>
       </div>
     </footer>
 
