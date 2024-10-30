@@ -20,6 +20,11 @@ const SELECTORS = {
   PRICING_VALUE: "[data-class='pricing__value']",
   HEADER_MANIFESTO: "[data-class='header__manifesto']",
   HEADER_CARD: "[data-class='header__card']",
+  MAIN_HEADING: "[data-class='main__heading']",
+  MAIN_CARD_SECTION: "[data-class='main__card-section']",
+  FOOTER_HEADING: "[data-class='footer__heading']",
+  FOOTER_JOURNEY: "[data-class='footer__journey']",
+  FOOTER_CONTACT: "[data-class='footer__contact']",
 };
 
 gsap.registerPlugin(ScrollTrigger);
@@ -92,28 +97,60 @@ matchMedia.add(
   },
 );
 
+const scrollTriggerObj = (selector) => {
+  return {
+    trigger: selector,
+    start: 'top 80%',
+    end: 'bottom 20%',
+    toggleActions: 'play none none none',
+    once: true,
+  };
+};
+
 gsap.from(SELECTORS.HEADER_MANIFESTO, {
   opacity: 0,
   y: 50,
   duration: 0.5,
-  scrollTrigger: {
-    trigger: SELECTORS.HEADER_MANIFESTO,
-    start: 'top 80%',
-    end: 'bottom 20%',
-    toggleActions: 'play none none none', // Play once on first enter
-    once: true, // Ensure animation happens only once
-  },
+  scrollTrigger: scrollTriggerObj(SELECTORS.HEADER_MANIFESTO),
 });
 
 gsap.from(SELECTORS.HEADER_CARD, {
   y: 30,
   opacity: 0,
   stagger: 0.25,
-  scrollTrigger: {
-    trigger: SELECTORS.HEADER_CARD,
-    start: 'top 80%',
-    end: 'bottom 20%',
-    toggleActions: 'play none none none', // Play once on first enter
-    once: true, // Ensure animation happens only once
-  },
+  scrollTrigger: scrollTriggerObj(SELECTORS.HEADER_CARD),
+});
+
+gsap.from(SELECTORS.MAIN_HEADING, {
+  y: 30,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: scrollTriggerObj(SELECTORS.MAIN_HEADING),
+});
+
+gsap.from(SELECTORS.MAIN_CARD_SECTION, {
+  y: 30,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: scrollTriggerObj(SELECTORS.MAIN_CARD_SECTION),
+});
+gsap.from(SELECTORS.FOOTER_HEADING, {
+  y: 30,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_HEADING),
+});
+
+gsap.from(SELECTORS.FOOTER_JOURNEY, {
+  y: 30,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_JOURNEY),
+});
+
+gsap.from(SELECTORS.FOOTER_CONTACT, {
+  y: 30,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: scrollTriggerObj(SELECTORS.FOOTER_CONTACT),
 });

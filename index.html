@@ -228,12 +228,16 @@
       >
         <h1
           class="z-1 max-w-80 text-center text-2xl font-semibold text-black-charcoal sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
+          data-class="main__heading"
         >
           What if you had an
           <span class="text-primary-vivid">AI co-founder</span> doing the hard
           work for you?
         </h1>
-        <div class="z-1 grid gap-5 md:grid-cols-2 md:gap-6">
+        <div
+          class="z-1 grid gap-5 md:grid-cols-2 md:gap-6"
+          data-class="main__card-section"
+        >
           <!-- CARD 1 -->
           <div
             class="main__card rounded-xl border-2 border-solid border-gray-steel p-1"
@@ -473,6 +477,7 @@
 
     <footer
       class="flex flex-col items-center pb-20 pe-4 ps-4 pt-12 sm:pb-16 sm:pe-10 sm:ps-10 sm:pt-14 xl:pt-28"
+      data-class="footer__heading"
     >
       <h1
         class="max-w-80 text-center text-lg font-semibold text-white sm:max-w-limit-sm sm:text-5xl xl:max-w-limit-md xl:text-8xl"
@@ -484,6 +489,7 @@
 
       <div
         class="relative flex justify-center pb-12 pt-12 sm:pb-16 sm:pt-16 xl:pb-30 xl:pt-30"
+        data-class="footer__journey"
       >
         <img
           class="z-1 hidden h-full w-full md:block"
@@ -535,7 +541,7 @@
         </div> -->
       </div>
 
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-6" data-class="footer__contact">
         <a
           class="block rounded-xl bg-primary-vivid pb-3 pe-13 ps-13 pt-3 text-center font-medium shadow-inset-white outline outline-2 outline-primary-vivid/30 backdrop-blur-2 transition-all duration-200 hover:scale-105 hover:brightness-110 sm:pb-3.5 sm:pt-3.5"
           href="/apply"
