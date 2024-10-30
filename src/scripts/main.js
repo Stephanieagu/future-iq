@@ -11,6 +11,7 @@ const SELECTORS = {
   RING: "[data-class='ring']",
   LOGO: "[data-class='logo']",
   NAV_MENU: "[data-class='nav-menu']",
+  HEADER_CONTENT: "[data-class='header__content']",
   HEADER_HEADING: "[data-class='header__heading']",
   HEADER_PAR: "[data-class='header__par']",
   HEADER_BTN: "[data-class='header__btn']",
@@ -51,7 +52,6 @@ const pricingDetailsTl = gsap.timeline({
     end: 'bottom 20%',
     toggleActions: 'play none none none',
     once: true,
-    markers: true,
   },
   defaults: {
     duration: 0.475,
@@ -64,8 +64,7 @@ heroTl
   .from(SELECTORS.RING, { y: '-70' })
   .from(SELECTORS.LOGO, { opacity: 0, xPercent: '-20' })
   .from(SELECTORS.NAV_MENU, { opacity: 0, xPercent: '20' }, '<')
-  .from(SELECTORS.HEADER_HEADING, { opacity: 0, y: '20' }, '<')
-  .from(SELECTORS.HEADER_PAR, { opacity: 0, y: '20', stagger: 0.05 })
+  .from(SELECTORS.HEADER_CONTENT, { opacity: 0, y: '20' }, '<')
   .from(SELECTORS.HEADER_BTN, { opacity: 0 });
 
 matchMedia.add(
@@ -103,7 +102,6 @@ gsap.from(SELECTORS.HEADER_MANIFESTO, {
     end: 'bottom 20%',
     toggleActions: 'play none none none', // Play once on first enter
     once: true, // Ensure animation happens only once
-    markers: true, // Enable markers for debugging
   },
 });
 
@@ -117,6 +115,5 @@ gsap.from(SELECTORS.HEADER_CARD, {
     end: 'bottom 20%',
     toggleActions: 'play none none none', // Play once on first enter
     once: true, // Ensure animation happens only once
-    markers: true, // Enable markers for debugging
   },
 });
