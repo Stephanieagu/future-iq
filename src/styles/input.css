@@ -80,8 +80,7 @@
   }
 
   .main__card {
-    inline-size: min(100%, 40rem);
-    /* block-size: min(100%, 40rem); */
+    inline-size: min(100%, 22rem);
   }
 
   .appearance-none-full {
@@ -121,5 +120,11 @@
   [data-class='header__heading'],
   [data-class='main__card-section'] {
     will-change: transform, opacity;
+  }
+
+  @media (min-width: 47.9375rem) {
+    .main__card {
+      inline-size: min(100%, 40rem);
+    }
   }
 }
