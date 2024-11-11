@@ -89,19 +89,19 @@
     appearance: none; /* Standard */
   }
 
-  input[required]:invalid:not(:placeholder-shown) {
+  .text-input[required]:not(:placeholder-shown) {
     @apply border-red-500;
   }
 
-  input[required]:valid:not(:placeholder-shown) {
+  .text-input[required]:valid:not(:placeholder-shown) {
     @apply border-success;
   }
 
-  input[required]:invalid:not(:placeholder-shown) + .error-msg {
+  .text-input[required]:not(:placeholder-shown) + .error-msg {
     @apply block text-red-500;
   }
 
-  input[required]:invalid ~ button[type='submit'] {
+  .text-input[required] ~ button[type='submit'] {
     @apply pointer-events-none opacity-60;
   }
   .nonvisible {

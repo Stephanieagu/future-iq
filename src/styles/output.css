@@ -1300,39 +1300,39 @@ html {
   /* Standard */
 }
 
-input[required]:invalid:not(:-moz-placeholder-shown) {
+.text-input[required]:not(:-moz-placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
-input[required]:invalid:not(:placeholder-shown) {
+.text-input[required]:not(:placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
-input[required]:valid:not(:-moz-placeholder-shown) {
+.text-input[required]:valid:not(:-moz-placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: hsl(120 93% 35% / var(--tw-border-opacity));
 }
 
-input[required]:valid:not(:placeholder-shown) {
+.text-input[required]:valid:not(:placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: hsl(120 93% 35% / var(--tw-border-opacity));
 }
 
-input[required]:invalid:not(:-moz-placeholder-shown) + .error-msg {
+.text-input[required]:not(:-moz-placeholder-shown) + .error-msg {
   display: block;
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-input[required]:invalid:not(:placeholder-shown) + .error-msg {
+.text-input[required]:not(:placeholder-shown) + .error-msg {
   display: block;
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-input[required]:invalid ~ button[type='submit'] {
+.text-input[required] ~ button[type='submit'] {
   pointer-events: none;
   opacity: 0.6;
 }
