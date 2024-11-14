@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Create timelines for animations
   const heroTl = gsap.timeline({
     defaults: {
-      duration: 0.475,
+      duration: 1,
       ease: 'power2.out',
     },
   });
