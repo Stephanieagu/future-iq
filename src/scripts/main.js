@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // HERO ANIMATION TIMELINE
   heroTl
-    .from(SELECTORS?.RING, { y: '-70' })
     .from(SELECTORS?.LOGO, { opacity: 0, xPercent: '-20' })
     .from(SELECTORS?.NAV_MENU, { opacity: 0, xPercent: '20' }, '<')
     .from(SELECTORS?.HEADER_CONTENT, { opacity: 0, y: '20' }, '<')
