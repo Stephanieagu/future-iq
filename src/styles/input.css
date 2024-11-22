@@ -89,7 +89,7 @@
     appearance: none; /* Standard */
   }
 
-  .text-input[required]:not(:placeholder-shown) {
+  .text-input[required]:invalid:not(:placeholder-shown) {
     @apply border-red-500;
   }
 
@@ -97,22 +97,26 @@
     @apply border-success;
   }
 
-  .text-input[required]:not(:placeholder-shown) + .error-msg {
+  .text-input[required]:invalid:not(:placeholder-shown) + .error-msg {
     @apply block text-red-500;
   }
 
   .text-input[required] ~ button[type='submit'] {
     @apply pointer-events-none opacity-60;
   }
+
   .nonvisible {
     @apply translate-y-5 opacity-0 transition-all duration-700 ease-in-out;
   }
+
   .visible {
     @apply opacity-1 translate-y-0;
   }
+
   .transition-delay-20 {
     transition-delay: 2s;
   }
+
   .transition-delay-30 {
     transition-delay: 3s;
   }

@@ -1300,12 +1300,12 @@ html {
   /* Standard */
 }
 
-.text-input[required]:not(:-moz-placeholder-shown) {
+.text-input[required]:invalid:not(:-moz-placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
-.text-input[required]:not(:placeholder-shown) {
+.text-input[required]:invalid:not(:placeholder-shown) {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
@@ -1320,13 +1320,13 @@ html {
   border-color: hsl(120 93% 35% / var(--tw-border-opacity));
 }
 
-.text-input[required]:not(:-moz-placeholder-shown) + .error-msg {
+.text-input[required]:invalid:not(:-moz-placeholder-shown) + .error-msg {
   display: block;
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-input[required]:not(:placeholder-shown) + .error-msg {
+.text-input[required]:invalid:not(:placeholder-shown) + .error-msg {
   display: block;
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
